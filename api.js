@@ -1,7 +1,7 @@
 async function fetchDiagram() {
   return fetch(
     // Replace PROCESS_DEFINITION_ID with a process definition id
-    "http://localhost:3030/v1/process-definitions/PROCESS_DEFINITION_ID/xml",
+    "http://localhost:3030/v1/process-definitions/2251799815678190/xml",
     {
       method: "GET",
     },
@@ -11,7 +11,7 @@ async function fetchDiagram() {
 async function fetchStatistics() {
   return fetch(
     // Replace PROCESS_INSTANCE_ID with a process instance id
-    "http://localhost:3030/v1/process-instances/PROCESS_INSTANCE_ID/statistics",
+    "http://localhost:3030/v1/process-instances/2251799816359826/statistics",
     {
       method: "GET",
     },
@@ -21,7 +21,7 @@ async function fetchStatistics() {
 async function fetchSequenceFlows() {
   return fetch(
     // Replace PROCESS_INSTANCE_ID with a process instance id
-    "http://localhost:3030/v1/process-instances/PROCESS_INSTANCE_ID/sequence-flows",
+    "http://localhost:3030/v1/process-instances/2251799816359826/sequence-flows",
     {
       method: "GET",
     },
